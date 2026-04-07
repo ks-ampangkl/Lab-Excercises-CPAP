@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academic sdgsdgInformation</title>
+    <title>Academic Information</title>
 </head>
 <h4>Menu</h4>
 <nav>
@@ -34,16 +34,42 @@
       </em></section></body>
 
 <section>
-    <form action = "#" method = "post">
-        <fieldset style = "border:1px solid blue; padding:20px;">
-            <legend style = "color:darkblue; font-size:18px;">Personal Information</legend>
-            <label for = "name" style = "font-size: 14px;">Name:</label>
-            <input type="text" name="name" required maxlength="50" placeholder="Enter your field name"></fieldset>
+    <form action = "#" method = "post" style="color: darkcyan;">
+        <legend> Contact Me</legend>
+        <fieldset>Your Name: 
+            <input type="name" id = "name" required maxlength="20">
+        <br><br>
+        Email:
+            <input type="email" id = "email" required placeholder="example@gmail.com">
+        <br><br>
+        Telephone Number
+            <input type = "tel" id ="number" required placeholder="000-0000-0000">
+        <br><br>
+        Date:
+            <input type="Date" id="date">
+        
+        <br>
+        <br>
 
-            <label for = "email" style="font-size:14 font-size">Email:</label>
-            <input type="email" id = "email" name="email" required placeholder="example your email">
-        </fieldset>
-    </form>
+        <label for = "subject">Choose your subject:</label>
+        <select id = "subject" style="color:green;">
+            <optgroup label = "Year 3">
+                <option> Software Engineering</option>
+                <option> Bioinformatics</option>
+                <option> Multimedia and Graphics</option>
+                <option> Artifical Intelligence</option>
+            </optgroup>
+                <optgroup label = "Year 4">
+                <option> Software Engineering</option>
+                <option> Bioinformatics</option>
+                <option> Multimedia and Graphics</option>
+            </optgroup>
+        </select>
+        <br>
+        <br>
+        <button type = "submit">Submit Form</button>
+    </fieldset>
+</form>
 </section>
       <small>Published in 2026</small>
 </body>
