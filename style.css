@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif+Caption:ital@0;1&display=swap');
+
+
+*{
+	box-sizing: border-box;
+
+}
+
+:root{
+
+	--color-primary-1:#1a1a1e;
+	--color-primary-2:#16213e;
+	--color-accent-1:#e8d5b7;
+	--color-accent-2:#1a1a1a;
+	--color-neutral-1:#666666;
+	--color-neutral-2:#a9a9a9;
+	--color-neutral-3:#d3d3d3;
+	--font-heading: "Google Sans",sans-serif;
+	--font-body: "Gill Sans",sans-serif;
+	--space-sm: 0.5rem;
+	--space-md: 1.5rem;
+	--space-lg: 3rem;
+
+	--font-size-h1 : 4rem;
+	--font-size-h2: 3.5rem;
+	--font-size-h3: 2.5rem;
+	--font-size-h4: 2rem;
+ 	--font-size-p: 1.5rem;
+ 	--font-size-blockquote: 3.5rem;
+ 	--font-size-small : 1rem;
+ 	--font-size-code: 2rem;
+ 	--font-size-caption: 1.8rem;
+}
+
+
+
+/* 1. Header: using margin to push the header down from the page border */
+header{
+	display: flex;
+	align-items: center;
+	background: #e8d5b7;
+	height: 100px;
+	position: fixed;
+	width:90%;
+	top: 0;
+	z-index: 10;
+	margin-top: 100px;
+}
+
+/* 2. Main: using padding to keep text away from the edges of the container */
+main{
+	background-color: lightblue;
+	text-align: center;
+}
+
+footer{
+	font-size: 20px;
+	text-align: center;
+}
+/* 3. Nav: using padding to create breathing room inside the nav box */
+nav{
+
+	display: flex;
+	justify-content:space-between;
+	position: sticky;
+	top:0;
+	flex-wrap: wrap;
+	gap: 30px;
+	text-align: center;
+	line-height: 50px;
+	font-weight: 400;
+	padding: 10;
+	background-color: greenyellow;
+	box-align: center;
+	border-radius: 20px;
+
+}
+
+.cards-2{
+	display: grid;
+	grid-template-columns: 1fr 280px;
+	gap:1.5rem;
+	align-items: stretch;
+}
+
+.cards{
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+	gap: var(--space-md);
+	align-items: stretch;
+}
+
+
+@media(min-width: 600px){
+	.cards{ grid-template-columns: repeat(2,1fr); }
+}
+
+@media(min-width: 1024px){
+	.cards{grid-template-columns: repeat(3, 1fr);}
+}
+.cards:hover{
+	transform: translateY(-4px);
+	transition: transform 0.2s;
+}
+
+nav a{
+	transition: color 1.2s,background-color 1.2s;
+}
+
+nav a:hover{
+	color:white;
+	background-color:purple;
+}
+
+
+
+
+html{
+		font-size: 62.5%;
+	}
+
+/* 4. Body: using margin reset to remove default spacing around the page */
+body{
+	margin: 0;
+	font-family: var(--font-body);
+	line-height: 1;
+	border: 10px solid var(--color-primary-1);
+	background-color: lightblue;
+	align-items: center;
+}
+
+small{
+	font-size: var(--font-size-small);
+}
+
+code{
+	font-size: var(--font-size-code);
+}
+
+caption{
+	font-family: "PT Serif Caption";
+	font-size: var(--font-size-caption);
+}
+h1{
+	font-size: var(--font-size-h1);
+	line-height: 1.5;
+}
+
+h2{
+	font-size: var(--font-size-h2);
+	line-height: 2;
+}
+
+h3{
+	font-size: var(--font-size-h3);
+	line-height: 1;
+}
+
+h4{
+	font-size: var(--font-size-h4);
+	line-height: 1;
+}
+
+p{
+	font-size: var(--font-size-p);
+}
+
+blockquote{
+	font-size:var(--font-size-blockquote);
+	border-radius: 20px;
+}
+
+/* 5. Tech figure: using margin to separate this block from others */
+.tech-figure{  
+	display: flex;
+	flex-direction: column;
+	align-items:flex-start;
+	margin-bottom:2rem;
+}
+.tech-figure img{
+	display:block;
+}
+ul {
+	margin-left: 0;
+}
+
+
+button{
+	border-radius: 20px;
+}
+
